@@ -11,27 +11,20 @@
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             background: linear-gradient(135deg, #0f766e 0%, #065f46 100%);
             color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
             padding: 20px;
+            line-height: 1.6;
         }
         .container {
-            text-align: center;
-            max-width: 700px;
-            background: rgba(0,0,0,0.4);
-            padding: 60px 50px;
-            border-radius: 20px;
-            backdrop-filter: blur(15px);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            max-width: 1100px;
+            margin: 0 auto;
         }
         h1 { 
             font-size: 4.5rem; 
-            margin-bottom: 15px;
+            margin: 40px 0 15px;
             color: #4ade80;
             letter-spacing: 8px;
             font-weight: 700;
+            text-align: center;
         }
         .acronym {
             font-size: 1.15rem;
@@ -39,120 +32,233 @@
             margin-bottom: 35px;
             font-weight: 500;
             letter-spacing: 1px;
+            text-align: center;
         }
         .subtitle { 
             font-size: 1.4rem; 
-            margin-bottom: 35px;
+            margin-bottom: 50px;
             color: #d1fae5;
-            line-height: 1.6;
+            text-align: center;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .features {
             background: rgba(255,255,255,0.1);
-            padding: 25px;
-            border-radius: 12px;
-            margin-bottom: 40px;
-            font-size: 1rem;
+            padding: 30px;
+            border-radius: 16px;
+            margin: 60px 0;
+            font-size: 1.1rem;
             border: 1px solid rgba(255,255,255,0.2);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .features p {
-            margin: 12px 0;
+            margin: 15px 0;
             color: #d1fae5;
             text-align: left;
-            padding-left: 10px;
+            padding-left: 15px;
+            position: relative;
+        }
+        .features p:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #86efac;
+            font-weight: bold;
+        }
+        .pitch-section {
+            margin: 60px 0;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(22,101,52,0.2), rgba(5,150,105,0.15));
+            border-radius: 24px;
+            border: 2px solid rgba(134,239,172,0.4);
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .pitch-section h2 {
+            color: #86efac;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 2.2rem;
+        }
+        .pitch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .pitch-item h4 {
+            color: #10b981;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+        .demo-section {
+            margin: 60px 0;
+            padding: 40px;
+            background: rgba(22,101,52,0.15);
+            border-radius: 24px;
+            border: 2px solid rgba(134,239,172,0.3);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .demo-section h3 {
+            color: #86efac;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+        .demo-video {
+            border-radius: 16px;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
         }
         .description {
             font-size: 1.1rem;
             line-height: 1.8;
-            margin-bottom: 40px;
+            margin: 50px 0;
             color: #cbd5e1;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .btn-group {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 12px;
+            margin: 10px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 1.05rem;
+        }
+        .btn:hover {
+            background: #059669;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(16,185,129,0.4);
         }
         .contact {
+            background: rgba(0,0,0,0.4);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 60px 0;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
             font-size: 1rem;
             color: #94a3b8;
-            margin-top: 50px;
-            padding-top: 35px;
-            border-top: 1px solid rgba(255,255,255,0.25);
         }
         .contact strong { color: #86efac; }
         .status {
             display: inline-block;
             background: #1e40af;
             color: #bfdbfe;
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-size: 0.95rem;
-            margin-bottom: 25px;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            margin-bottom: 30px;
             font-weight: 600;
+            text-align: center;
         }
-        a {
-            color: #86efac;
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.3s;
-        }
-        a:hover {
-            border-bottom-color: #86efac;
-        }
-        .btn {
-            display: inline-block;
-            background: #10b981;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 8px;
-            margin: 10px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-        .btn:hover {
-            background: #059669;
-            border-bottom: none;
+        a { color: #86efac; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        @media (max-width: 768px) {
+            h1 { font-size: 3.5rem; }
+            .pitch-grid { grid-template-columns: 1fr; }
+            .features { margin: 30px 20px; padding: 20px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="status">🔬 Research & Portfolio Project</div>
+        <div class="status">🔬 Research & Portfolio Project | Finnish Health Data Hackathon 2026</div>
         
         <h1>LACCO</h1>
         <p class="acronym">LACtate + CO₂ Health Monitoring Research</p>
         
-        <p class="subtitle">Multi-Sensor Wearable Research Project for CPAP Optimization & Athletic Performance</p>
+        <p class="subtitle">Wearable research prototype combining physiological & environmental monitoring with FHIR R4 standardization</p>
+        
+        <!-- 🔥 PITCH-OSIO -->
+        <div class="pitch-section">
+            <h2>🎯 What is LACCO?</h2>
+            <div class="pitch-grid">
+                <div class="pitch-item">
+                    <h4>📊 What</h4>
+                    <p>Wrist-worn device measuring HR, HRV, SpO₂ + CO₂, VOCs, PM2.5, temperature simultaneously</p>
+                </div>
+                <div class="pitch-item">
+                    <h4>🚨 Why</h4>
+                    <p>Indoor CO₂ >1000ppm causes 20% cognitive impairment. LACCO detects before symptoms appear</p>
+                </div>
+                <div class="pitch-item">
+                    <h4>🔌 How</h4>
+                    <p>Bluetooth → Mobile app → FHIR R4 Bundle → EHR integration & CDS Hooks</p>
+                </div>
+                <div class="pitch-item">
+                    <h4>📋 Status</h4>
+                    <p>Finnish Utility Model filed Dec 2025 | MIT-licensed FHIR profiles | Hackathon prototype</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 📱 DEMO-VIDEO (lisää app-demo.mp4 ensin!) -->
+        <div class="demo-section">
+            <h3>📱 Live App Demo</h3>
+            <video class="demo-video" controls preload="metadata">
+                <source src="app-demo.mp4" type="video/mp4">
+                Your browser does not support video. <a href="app-demo.mp4">Download demo</a>
+            </video>
+            <p style="margin-top: 20px; color: #cbd5e1; font-size: 1rem;">
+                <em>Real-time CO₂ monitoring, physiological data, and clinical decision support</em>
+            </p>
+        </div>
         
         <div class="features">
-            <p>✓ Research focus: Physiological + environmental data synchronization</p>
-            <p>✓ FHIR R4 standardization for healthcare interoperability</p>
-            <p>✓ Open source profiles and CDS Hooks</p>
-            <p>✓ Finnish Health Data Hackathon 2026 project</p>
+            <p>Research prototype demonstrating FHIR R4 profiles for wearable health devices</p>
+            <p>Fully standardized Observation resources with LOINC/SNOMED codes</p>
+            <p>CDS Hooks for clinical decision support (CO₂ alerts, ventilation recommendations)</p>
+            <p>Open source MIT-licensed profiles for healthcare interoperability</p>
+            <p>Finnish Health Data Hackathon 2026 portfolio project</p>
         </div>
         
         <p class="description">
-            <strong>LACCO</strong> is a research project exploring simultaneous measurement 
-            of body physiology (lactate, muscle O₂, HRV) and breathing environment (CO₂, air quality, temperature). 
-            This portfolio project demonstrates FHIR standardization for wearable health devices.
+            LACCO explores simultaneous monitoring of physiological parameters and indoor air quality 
+            using FHIR R4 standardization. This academic research prototype demonstrates how wearable 
+            devices can integrate with electronic health records through standardized healthcare APIs.
         </p>
 
-        <div style="margin: 40px 0;">
-            <a href="https://vimeo.com/1154677257" class="btn">🎬 Watch Pitch Video</a>
-            <a href="https://github.com/ArtOfSensorTech/lacco-fhir-profiles" class="btn">💻 View on GitHub</a>
+        <div class="btn-group">
+            <a href="https://vimeo.com/1154677257" class="btn">🎬 Watch 5-min Pitch</a>
+            <a href="https://github.com/ArtOfSensorTech/lacco-fhir-profiles" class="btn">💻 FHIR Profiles</a>
         </div>
         
         <div class="contact">
-            <p><strong>Research & Collaboration:</strong></p>
+            <p><strong>🔬 Research Collaboration:</strong></p>
             <p>📧 <a href="mailto:arto.kivimaki@tutanota.com">arto.kivimaki@tutanota.com</a></p>
-            <p style="margin-top: 25px; font-size: 0.9rem;">
-            <strong>About This Project:</strong><br>
-            Portfolio and research project for Finnish Health Data Hackathon 2026<br>
-            Demonstrating FHIR R4 standardization for wearable health devices<br><br>
-        
-            <strong>Technical Background:</strong><br>
-            FHIR profiles and software code: MIT License (open source)<br>
-            Device concept: Finnish Utility Model Application (Filed Dec 2025)<br>
-            <em>Academic research exploring physiological + environmental monitoring</em><br><br>
-        
-            <strong>Arto Kivimäki</strong> | Independent Researcher & Developer<br>
-    </p>
-</div>
+            <p style="margin-top: 25px; font-size: 0.95rem; line-height: 1.7;">
+                <strong>About This Project:</strong><br>
+                Academic portfolio & research project for Finnish Health Data Hackathon 2026<br>
+                Demonstrating FHIR R4 standardization for next-generation wearable health devices<br><br>
+                
+                <strong>🛡️ Licensing:</strong><br>
+                • FHIR profiles, CDS Hooks, example data: <strong>MIT License</strong> (open source)<br>
+                • Device concept: <strong>Finnish Utility Model</strong> (filed Dec 2025, pending)<br><br>
+                
+                <strong>Arto Kivimäki</strong> | Independent Researcher & Developer<br>
+                Târgu Mureș, Romania
+            </p>
+        </div>
     </div>
 </body>
 </html>
